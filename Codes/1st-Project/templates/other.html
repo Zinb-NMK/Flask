@@ -1,7 +1,18 @@
-{% extends "base.html" %}
+{% extends "base-1.html" %}
 {% block title %}Other Page{% endblock %}
 
 {% block content %}
     <h1>Filters</h1>
+    <p>{{ some_text }}</p>
+    <p>{{ some_text|lower }}</p>
     <p>{{ some_text|upper }}</p>
+    <p>{{ some_text|title }}</p>
+    <p>{{ some_text|replace('W', 'M') }}</p>
+    <p>{{ some_text|reverse_string }}</p>
+    <p>{{ some_text|repeat }}</p>
+    <p>{{ some_text|repeat(5) }}</p>
+    <p>{{ some_text|alternate_case }}</p>
+
+
+
 {% endblock %}

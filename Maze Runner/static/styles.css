@@ -1,0 +1,68 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center everything on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Container for game and controls */
+#game-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Controls for game */
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;  /* Space between controls and game */
+}
+
+#controls button {
+    margin-bottom: 10px; /* Space between buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#controls button:hover {
+    background-color: #45a049;
+}
+
+/* Game content container */
+#game-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title of the game */
+#game-text {
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 20px; /* Space between title and game board */
+    text-align: center;
+}
+
+/* Make sure the canvas takes up space and has a grid */
+#game-board {
+    border: 2px solid black;  /* Add border around the game area */
+    background-color: #f8f8f8;
+}
